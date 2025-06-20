@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<head>
+
+  <!-- <link href="css/two_style.css" rel="stylesheet" /> -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="PlayerOne">
+  <meta property="og:title" content="PlayerOne" />
+  <meta property="og:description"
+    content="PlayerOne: Egocentric World Simulator" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/video_t1.png" />
+  <meta property="og:image:width" content="2412" />
+  <meta property="og:image:height" content="1394" />
+
+
+
+
+  <title>PlayerOne</title>
+  <link rel="icon" type="image/x-icon" href="source/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="hero banner">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="display: flex; align-items: center;">
+              <i class="pixart-alpha-icon" style="font-size: 120px; margin-right: -20px; margin-top: -40px;"></i>
+              <span style="margin-left: 0px;">
+                <span style="color: rgb(223,126,35); font-weight: bold;font-size: 52px;">PlayerOne:</span>
+                <span style="color: white; font-weight: bold;  font-size: 52px;">Egocentric World Simulator</span></br>
+
+              </span>
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"></span>
+              <a href="https://yuanpengtu.github.io/" target="_blank" style="color: rgb(255,255,255) !important; text-decoration: underline;">Yuanpeng Tu</a><sup style="color: rgb(255,255,255)">1,2</sup>,&thinsp;
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=7QvWnzMAAAAJ&hl=zh-CN" target="_blank"
+                  style="color: rgb(255,255,255) !important; text-decoration: underline;">Hao
+                  Luo</a><sup style="color: rgb(255,255,255)">2,3</sup>,&thinsp; </span>
+              <span class="author-block">
+                <a href="https://xavierchen34.github.io/" target="_blank"
+                  style="color: rgb(255,255,255) !important; text-decoration: underline;">Xi
+                  Chen</a><sup style="color: rgb(255,255,255)">1 </sup>,&thinsp;</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en" target="_blank"
+                  style="color: rgb(255,255,255) !important; text-decoration: underline;">Xiang Bai</a><sup style="color: rgb(255,255,255)">4</sup>, &thinsp; </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=WCRGTHsAAAAJ&hl=en" target="_blank"
+                  style="color: rgb(255,255,255) !important; text-decoration: underline;">Fan Wang</a><sup style="color: rgb(255,255,255)">2</sup>, &thinsp; </span>
+              <span class="author-block">
+                <a href="https://hszhao.github.io/" target="_blank" style="color: rgb(255,255,255) !important; text-decoration: underline;">Hengshuang
+                  Zhao</a><sup style="color: rgb(255,255,255)">1†</sup>,&thinsp; </span>
+
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup style="color: rgb(255,255,255)">1</sup style="color: rgb(255,255,255)">HKU,&thinsp; &thinsp;</span>
+              <span class="author-block"><sup style="color: rgb(255,255,255)">2</sup style="color: rgb(255,255,255)">DAMO Academy, Alibaba Group&thinsp; &thinsp;</span>
+              <span class="author-block"><sup style="color: rgb(255,255,255)">3</sup style="color: rgb(255,255,255)">Hupan Lab&thinsp; &thinsp;</span>
+              <span class="author-block"><sup style="color: rgb(255,255,255)">4</sup style="color: rgb(255,255,255)">HUST&thinsp; &thinsp;</span>
+              <span  style="color: rgb(255,255,255)" class="eql-cntrb"><small><br><sup style="color: rgb(255,255,255)">†</sup style="color: rgb(255,255,255)"><a href="mailto:hszhao@cs.hku.hk">Corresponding
+                    author.</a></small></span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2506.09995" target="_blank"
+                    class="external-link button is-normal is-rounded is-white">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Video link -->
+                <span class="link-block">
+                  <a href="https://playerone-hku.github.io/"
+                    target="_blank" class="external-link button is-normal is-rounded is-white">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/yuanpengtu/PlayerOne" target="_blank"
+                    class="external-link button is-normal is-rounded is-white">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <!-- <div class="hero-body"> -->
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/images/teaser.png"
+        type="video/mp4">
+      </video> -->
+        <img src="static/images/teaser.png"
+          alt="MY ALT TEXT" />
+        </h2>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <!-- <div class="hero-body"> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/images/Motionalignment.mp4"
+            type="video/mp4">
+        </video>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop is-centered has-text-centered">
+        <!-- <div class="columns is-centered has-text-centered"> -->
+        <!-- <div class="column is-four-fifths"> -->
+        <h2 class="title is-3">Abstract</h2>
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            We introduce PlayerOne, the first egocentric realistic world simulator, facilitating immersive and unrestricted exploration within vividly dynamic environments. Given an egocentric scene image from the user, PlayerOne can accurately construct the corresponding world and generate egocentric videos that are strictly aligned with the real-scene human motion of the user captured by an exocentric camera. PlayerOne is trained in a coarse-to-fine pipeline that first performs pretraining on large-scale egocentric text-video pairs for coarse-level egocentric understanding, followed by finetuning on synchronous motion-video data extracted from egocentric-exocentric video datasets with our automatic construction pipeline. Besides, considering the varying importance of different components, we design a part-disentangled motion injection scheme, enabling precise control of part-level movements. In addition, we devise a joint reconstruction framework that progressively models both the 4D scene and video frames, ensuring scene consistency in the long-form video generation. Experimental results demonstrate its great generalization ability in precise control of varying human movements and world-consistent modeling of diverse scenarios. It marks the first endeavor into egocentric real-world simulation and can pave the way for the community to delve into fresh frontiers of world modeling and its diverse applications.
+          </p>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+
+
+  <!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Demo Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="https://cloud.video.taobao.com/vod/play/cFNxeHpNYjAzV3EycWo/S0hMQVVESkJKQXJrdk4wd1VMSUtsR3FNVTAvcTZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ"
+            type="video/mp4">
+          </video> 
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+  <!-- End youtube video -->
+
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <!-- <section class="hero is-light"> -->
+    <div class="hero-body">
+      <div class="container is-max-desktop is-centered has-text-centered">
+        <h2 class="title is-3">Overall Framework of PlayerOne</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="source/framework.png"
+            alt="MY ALT TEXT" />
+          <h2 class="content has-text-justified">
+            It begins by converting the egocentric first frame into visual tokens. The human motion sequence is split into groups and fed into the motion encoders respectively to generate part-wise motion latents, with the head parameters converted into a rotation-only camera sequence. This camera sequence is then encoded via a camera encoder, and its output is injected into noised video latents to improve view-change alignment. Next, we render a 4D scene point map sequence with the ground truth video, which is then processed by a point map encoder with an adapter to produce scene latents. Then we input the concatenation of these latents into the DiT Model and perform noising and denoising on both the video and scene latents to ensure world-consistent generation. Finally, the denoised latents are decoded by VAE decoders to produce the final results. Note that only the first frame and the human motion sequence are needed for inference.
+          </h2>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section class="hero is-small">
+    <!-- <section class="hero is-light"> -->
+    <div class="hero-body">
+      <div class="container is-max-desktop is-centered has-text-centered">
+        <h2 class="title is-3">Dataset Construction</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/dataset.png"
+            alt="MY ALT TEXT" />
+          <h2 class="content has-text-justified">
+            By seamlessly integrating detection and human pose esimation models, we can extract motion-video pairs from existing egocentric-exocentric video datasets while retaining high-quality data through our automatic filtering scheme.
+          </h2>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+
+  <section class="section hero is-small is-light 2d">
+    <div class="hero-body">
+      <div class="container is-centered has-text-centered">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="column is-half">
+            <video poster="" id="tree1" controls muted loop width="100%">
+              <source src="static/images/Moreexample.mp4"
+                type="video/mp4">
+            </video>
+            <h3 class="title is-5">More simulated videos</h3>
+          </div>
+          <!-- 第二视频 -->
+          <div class="column is-half">
+            <video poster="" id="tree2" controls muted loop width="100%">
+              <source src="static/images/ablationstudynew.mp4"
+                type="video/mp4">
+            </video>
+            <h3 class="title is-5">Ablation study on core components</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section hero is-small is-light 2d">
+    <div class="hero-body">
+      <div class="container is-centered has-text-centered">
+        <h2 class="title is-3">Comparison with other works</h2>
+<br>
+<br>
+<br>
+
+<h3 class="title is-4">   &nbsp  Ours &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cosmos-7B &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cosmos-14B  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Aether</h3>
+<br>
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example1 (2).mp4"
+                type="video/mp4">
+            </video>
+            
+          </div>
+          </div>
+<br>
+
+          <h3 class="title is-6">
+Descriptions: First-person perspective, stretch out the left hand to high-five the man opposite </h3>
+
+
+<br>
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example2.mp4"
+                type="video/mp4">
+            </video>
+            <br>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, I stand up and extend my right hand to shake hands with the man opposite me</h3>
+<br>
+
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example3.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective,I stroll forward</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example4.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, I extended my left hand to shake hands with the woman opposite me</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example5.mp4"
+                type="video/mp4">
+            </video>
+            <h3 class="title is-5"></h3>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">
+Descriptions: First-person perspective, I squatted down and put my hands on both sides of the chair</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example6 (2).mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, squat down and stretch out my hands to touch the dog's head</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example7.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, I stretch out my right hand to pick up the triangular rice ball below</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example8.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, I stretched out my left hand and high-fived the golden retriever.</h3>
+<br>
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example9.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">
+Descriptions: First-person perspective, I reach out my left hand and stroke the golden retriever's head</h3>
+<br>
+
+
+
+        <div class="columns is-mobile is-centered">
+          <!-- 第一视频 -->
+          <div class="columns">
+            <video poster="" id="tree1" controls muted loop width="100%" height="180%">
+              <source src="static/images/example10.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          </div>
+<br>
+
+        <h3 class="title is-6">Descriptions: First-person perspective, I stretch out my left hand and high-five the man opposite me</h3>
+<br>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- End video carousel -->
+
+
+  <!-- End video carousel -->
+
+
+
+
+  <!-- End video carousel -->
+
+
+
+  <!-- End video carousel -->
+
+  <!-- Video carousel -->
+
+  <!-- End video carousel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Reference</h2>
+      <pre>
+      <code>
+@article{tu2025PlayerOne,
+title={PlayerOne: Egocentric World Simulator},
+author={Tu, Yuanpeng and Luo, Hao and Chen, Xi and Bai, Xiang and Wang, Fan and Zhao, Hengshuang},
+journal={arXiv preprint},
+year={2025}}
+        
+
+</code>
+</pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8 text-center">
+          <div class="content text-center">
+
+            <p>
+              <font color='red'>
+                The images used in the demo videos are for academic purposes only and are not for commercial use. If you
+                feel that the images we use infringe your rights, please contact us and we will delete them immediately
+                and express our sincere apologies. Contact email: yuanpengtu@connect.hku.hk.</font>
+              The source code of this webpage is borrowed from the <a href="https://nerfies.github.io"
+                target="_blank">Nerfies</a>  project webpage.
+            </p>
+            <p class="has-text-centered">Total clicks: <span id="busuanzi_value_site_pv"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // bulmaCarousel.attach('#results-carousel11', {
+    //     slidesToScroll: 1,
+    //     slidesToShow: 2,
+    //     infinite: true,
+    //     autoplay: true,
+    //     // autoplay: true,
+    // });
+    bulmaCarousel.attach('#results-carousel22', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+    });
+    bulmaCarousel.attach('#results-carousel33', {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      infinite: true,
+      autoplay: false,
+    });
+  </script>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
